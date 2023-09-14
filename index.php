@@ -66,25 +66,43 @@ if (isset($_POST['number'])) {
 <html>
 <head>
     <title>Biene Bryle T. Sanico</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Mobile Dev LAB</h1>
-    
-    <form action="" method="post">
-        <input type="number" name="number" placeholder="Enter a number" required>
-        <input type="submit" value="Submit">
-    </form>
-    
-    <p>The line is: <br><?php echo nl2br($line); ?></p>
-    <br/>
-    <p>The striped line is: <br><?php echo nl2br($stripedLine); ?></p>
-    <br/>
-    <p>The square is: <br><?php echo nl2br($square); ?></p>
-    <br/>
-    <p>The Parallelogram is: <br><?php echo nl2br($parallelogram); ?></p>
-    <br/>
-    <p>The triangle is: <br><?php echo nl2br($triangle); ?></p>
-    <br/>
-    <p>The reverse triangle is: <br><?php echo nl2br($rtriangle); ?></p>
+    <div class="header-container">
+        <h1>Mobile Dev LAB</h1>
+        
+        <form action="" method="post">
+            <input type="number" name="number" placeholder="Enter a number" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="output-container">
+        <div class="output-box">
+            <p>The line is:</p>
+            <?php echo nl2br($line); ?>
+        </div>
+        <div class="output-box">
+            <p>The striped line is:</p>
+            <?php echo nl2br($stripedLine); ?>
+        </div>
+        <div class="output-box">
+            <p>The square is:</p>
+            <?php echo nl2br($square); ?>
+        </div>
+        <div class="output-box">
+            <p>The Parallelogram is:</p>
+            <?php echo nl2br($parallelogram); ?>
+        </div>
+        <div class="output-box">
+            <p>The triangle is:</p>
+            <?php echo nl2br($triangle); ?>
+        </div>
+        <div class="output-box">
+            <p>The reverse triangle is:</p>
+            <?php echo nl2br($rtriangle); ?>
+        </div>
+    </div>
 </body>
 </html>
